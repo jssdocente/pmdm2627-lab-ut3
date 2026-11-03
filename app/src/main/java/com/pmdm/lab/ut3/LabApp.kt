@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import com.pmdm.lab.ut3.codelabs.codelab01_tema.TemaScreen
 import com.pmdm.lab.ut3.codelabs.codelab02_catalogo.CatalogoScreen
 import com.pmdm.lab.ut3.codelabs.codelab03_tareas.TareasScreen
+import com.pmdm.lab.ut3.codelabs.codelab04_propinas.PropinasScreen
 import com.pmdm.lab.ut3.ui.menu.LabMenuScreen
 
 // Cada pantalla del laboratorio. Para añadir un codelab: una entrada aquí
@@ -25,7 +26,8 @@ enum class PantallaLab(
     MENU("Menú", "Catálogo de codelabs"),
     TEMA("3.01 · Tema de Material 3", "Colores, tipografía, formas y modo oscuro"),
     CATALOGO("3.02 · Catálogo de cursos", "LazyColumn, key y tarjetas desplegables"),
-    TAREAS("3.03 · Lista de tareas", "Scaffold, TopAppBar, FAB, Snackbar y AlertDialog")
+    TAREAS("3.03 · Lista de tareas", "Scaffold, TopAppBar, FAB, Snackbar y AlertDialog"),
+    PROPINAS("3.04 · Calculadora de propinas", "TextField con validación, Slider y Switch")
 }
 
 @Composable
@@ -51,6 +53,9 @@ fun LabApp(modifier: Modifier = Modifier) {
         }
         PantallaLab.TAREAS -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
             TareasScreen()
+        }
+        PantallaLab.PROPINAS -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            PropinasScreen()
         }
     }
 }

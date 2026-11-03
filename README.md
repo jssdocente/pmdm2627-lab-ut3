@@ -15,6 +15,7 @@ Cada codelab tiene dos *tags*: el punto de partida (`-inicio`) y el resultado al
 | 3.01 · Tema de Material 3: colores, tipografía y formas | `c3.01-inicio` | `c3.01-fin` |
 | 3.02 · Catálogo de cursos: `LazyColumn` y `key` | `c3.02-inicio` | `c3.02-fin` |
 | 3.03 · Lista de tareas: `Scaffold`, `Snackbar` y `AlertDialog` | `c3.03-inicio` | `c3.03-fin` |
+| 3.04 · Calculadora de propinas: formularios y validación | `c3.04-inicio` | `c3.04-fin` |
 
 ## Descargar un tag
 
