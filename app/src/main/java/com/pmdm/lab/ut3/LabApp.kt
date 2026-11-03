@@ -10,6 +10,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import com.pmdm.lab.ut3.codelabs.codelab01_tema.TemaScreen
 import com.pmdm.lab.ut3.ui.menu.LabMenuScreen
 
 // Cada pantalla del laboratorio. Para añadir un codelab: una entrada aquí
@@ -19,7 +20,8 @@ enum class PantallaLab(
     val descripcion: String,
     val esReto: Boolean = false
 ) {
-    MENU("Menú", "Catálogo de codelabs")
+    MENU("Menú", "Catálogo de codelabs"),
+    TEMA("3.01 · Tema de Material 3", "Colores, tipografía, formas y modo oscuro")
 }
 
 @Composable
@@ -37,6 +39,9 @@ fun LabApp(modifier: Modifier = Modifier) {
             onAbrir = { pantalla = it },
             modifier = modifier
         )
+        PantallaLab.TEMA -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            TemaScreen()
+        }
     }
 }
 
