@@ -13,6 +13,7 @@ Cada codelab tiene dos *tags*: el punto de partida (`-inicio`) y el resultado al
 | Codelab | Inicio | Fin |
 | :--- | :--- | :--- |
 | 3.01 · Tema de Material 3: colores, tipografía y formas | `c3.01-inicio` | `c3.01-fin` |
+| 3.02 · Catálogo de cursos: `LazyColumn` y `key` | `c3.02-inicio` | `c3.02-fin` |
 
 ## Descargar un tag
 
