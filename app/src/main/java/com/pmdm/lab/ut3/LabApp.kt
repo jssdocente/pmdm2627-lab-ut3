@@ -14,6 +14,7 @@ import com.pmdm.lab.ut3.codelabs.codelab01_tema.TemaScreen
 import com.pmdm.lab.ut3.codelabs.codelab02_catalogo.CatalogoScreen
 import com.pmdm.lab.ut3.codelabs.codelab03_tareas.TareasScreen
 import com.pmdm.lab.ut3.codelabs.codelab04_propinas.PropinasScreen
+import com.pmdm.lab.ut3.codelabs.codelab05_navegacion.CursosApp
 import com.pmdm.lab.ut3.ui.menu.LabMenuScreen
 
 // Cada pantalla del laboratorio. Para añadir un codelab: una entrada aquí
@@ -27,7 +28,8 @@ enum class PantallaLab(
     TEMA("3.01 · Tema de Material 3", "Colores, tipografía, formas y modo oscuro"),
     CATALOGO("3.02 · Catálogo de cursos", "LazyColumn, key y tarjetas desplegables"),
     TAREAS("3.03 · Lista de tareas", "Scaffold, TopAppBar, FAB, Snackbar y AlertDialog"),
-    PROPINAS("3.04 · Calculadora de propinas", "TextField con validación, Slider y Switch")
+    PROPINAS("3.04 · Calculadora de propinas", "TextField con validación, Slider y Switch"),
+    NAVEGACION("3.05 · Navegar entre pantallas", "Navigation 3: pila, claves y argumentos")
 }
 
 @Composable
@@ -56,6 +58,9 @@ fun LabApp(modifier: Modifier = Modifier) {
         }
         PantallaLab.PROPINAS -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
             PropinasScreen()
+        }
+        PantallaLab.NAVEGACION -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            CursosApp()
         }
     }
 }
