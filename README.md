@@ -20,6 +20,16 @@ Cada codelab tiene dos *tags*: el punto de partida (`-inicio`) y el resultado al
 | 3.06 · Quiz con ViewModel y `StateFlow` | `c3.06-inicio` | `c3.06-fin` |
 | 3.07 · Ficha de héroe: recursos, imágenes e idiomas | `c3.07-inicio` | `c3.07-fin` |
 
+## Retos
+
+Los retos parten del último codelab terminado. El tag `-inicio` trae la pantalla vacía con los `TODO`; el tag `-solucion`, una solución posible (el reto 3.03 no tiene solución publicada).
+
+| Reto | Inicio | Solución |
+| :--- | :--- | :--- |
+| 3.01 · El Ahorcado | `r3.01-inicio` | `r3.01-solucion` |
+| 3.02 · Wordle | `r3.02-inicio` | `r3.02-solucion` |
+| 3.03 · Memory | `r3.03-inicio` | (sin solución publicada) |
+
 ## Descargar un tag
 
 ```bash

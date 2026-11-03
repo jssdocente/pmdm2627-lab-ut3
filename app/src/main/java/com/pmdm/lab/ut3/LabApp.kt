@@ -17,6 +17,9 @@ import com.pmdm.lab.ut3.codelabs.codelab04_propinas.PropinasScreen
 import com.pmdm.lab.ut3.codelabs.codelab05_navegacion.CursosApp
 import com.pmdm.lab.ut3.codelabs.codelab06_quiz.QuizScreen
 import com.pmdm.lab.ut3.codelabs.codelab07_heroe.HeroeScreen
+import com.pmdm.lab.ut3.retos.reto01_ahorcado.ui.AhorcadoScreen
+import com.pmdm.lab.ut3.retos.reto02_wordle.WordleScreen
+import com.pmdm.lab.ut3.retos.reto03_memory.MemoryScreen
 import com.pmdm.lab.ut3.ui.menu.LabMenuScreen
 
 // Cada pantalla del laboratorio. Para añadir un codelab: una entrada aquí
@@ -33,7 +36,10 @@ enum class PantallaLab(
     PROPINAS("3.04 · Calculadora de propinas", "TextField con validación, Slider y Switch"),
     NAVEGACION("3.05 · Navegar entre pantallas", "Navigation 3: pila, claves y argumentos"),
     QUIZ("3.06 · Quiz con ViewModel", "UiState, StateFlow y flujo unidireccional"),
-    HEROE("3.07 · Ficha de héroe", "Recursos, imágenes, idiomas y ColorFilter")
+    HEROE("3.07 · Ficha de héroe", "Recursos, imágenes, idiomas y ColorFilter"),
+    AHORCADO("Reto 3.01 · El Ahorcado", "ViewModel, teclado virtual y diálogo de fin", esReto = true),
+    WORDLE("Reto 3.02 · Wordle", "Tablero de intentos con pistas de colores", esReto = true),
+    MEMORY("Reto 3.03 · Memory", "LazyVerticalGrid y corrutinas en el ViewModel", esReto = true)
 }
 
 @Composable
@@ -71,6 +77,15 @@ fun LabApp(modifier: Modifier = Modifier) {
         }
         PantallaLab.HEROE -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
             HeroeScreen()
+        }
+        PantallaLab.AHORCADO -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            AhorcadoScreen()
+        }
+        PantallaLab.WORDLE -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            WordleScreen()
+        }
+        PantallaLab.MEMORY -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            MemoryScreen()
         }
     }
 }
