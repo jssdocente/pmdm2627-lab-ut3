@@ -1,0 +1,30 @@
+<resources>
+    <!-- Codelab 3.07: hero sheet (English) -->
+    <string name="heroe_titulo">Hero sheet</string>
+    <string name="heroe_elige_clase">Choose a class</string>
+    <string name="heroe_clase_guerrero">Warrior</string>
+    <string name="heroe_clase_mago">Mage</string>
+    <string name="heroe_clase_picaro">Rogue</string>
+    <string name="heroe_vida">HP: %1$d / %2$d</string>
+    <string name="heroe_mana">MP: %1$d / %2$d</string>
+    <string name="heroe_ataque">Attack: %1$d</string>
+    <string name="heroe_habilidades">Abilities</string>
+    <string name="heroe_descripcion_imagen">Illustration of the %1$s class</string>
+    <string name="heroe_descripcion_escudo">Class shield</string>
+
+    <string-array name="habilidades_guerrero">
+        <item>Seismic slam</item>
+        <item>Battle cry</item>
+        <item>Shield wall</item>
+    </string-array>
+    <string-array name="habilidades_mago">
+        <item>Frost spear</item>
+        <item>Blink</item>
+        <item>Firestorm</item>
+    </string-array>
+    <string-array name="habilidades_picaro">
+        <item>Shadowstep</item>
+        <item>Paralysing poison</item>
+        <item>Dagger rain</item>
+    </string-array>
+</resources>

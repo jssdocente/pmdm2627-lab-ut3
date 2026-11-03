@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Lab UT3</string>
+
+    <!-- Codelab 3.07: ficha de héroe -->
+    <string name="heroe_titulo">Ficha de héroe</string>
+    <string name="heroe_elige_clase">Elige una clase</string>
+    <string name="heroe_clase_guerrero">Guerrero</string>
+    <string name="heroe_clase_mago">Maga</string>
+    <string name="heroe_clase_picaro">Pícaro</string>
+    <string name="heroe_vida">Vida: %1$d / %2$d</string>
+    <string name="heroe_mana">Maná: %1$d / %2$d</string>
+    <string name="heroe_ataque">Ataque: %1$d</string>
+    <string name="heroe_habilidades">Habilidades</string>
+    <string name="heroe_descripcion_imagen">Ilustración de la clase %1$s</string>
+    <string name="heroe_descripcion_escudo">Escudo de la clase</string>
+
+    <string-array name="habilidades_guerrero">
+        <item>Golpe sísmico</item>
+        <item>Grito de guerra</item>
+        <item>Muro de escudos</item>
+    </string-array>
+    <string-array name="habilidades_mago">
+        <item>Lanza de escarcha</item>
+        <item>Teletransporte</item>
+        <item>Tormenta de fuego</item>
+    </string-array>
+    <string-array name="habilidades_picaro">
+        <item>Paso sombrío</item>
+        <item>Veneno paralizante</item>
+        <item>Lluvia de dagas</item>
+    </string-array>
 </resources>

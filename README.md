@@ -18,6 +18,7 @@ Cada codelab tiene dos *tags*: el punto de partida (`-inicio`) y el resultado al
 | 3.04 · Calculadora de propinas: formularios y validación | `c3.04-inicio` | `c3.04-fin` |
 | 3.05 · Navegar entre pantallas: Navigation 3 | `c3.05-inicio` | `c3.05-fin` |
 | 3.06 · Quiz con ViewModel y `StateFlow` | `c3.06-inicio` | `c3.06-fin` |
+| 3.07 · Ficha de héroe: recursos, imágenes e idiomas | `c3.07-inicio` | `c3.07-fin` |
 
 ## Descargar un tag
 
