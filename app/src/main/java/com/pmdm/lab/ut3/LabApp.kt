@@ -15,6 +15,7 @@ import com.pmdm.lab.ut3.codelabs.codelab02_catalogo.CatalogoScreen
 import com.pmdm.lab.ut3.codelabs.codelab03_tareas.TareasScreen
 import com.pmdm.lab.ut3.codelabs.codelab04_propinas.PropinasScreen
 import com.pmdm.lab.ut3.codelabs.codelab05_navegacion.CursosApp
+import com.pmdm.lab.ut3.codelabs.codelab06_quiz.QuizScreen
 import com.pmdm.lab.ut3.ui.menu.LabMenuScreen
 
 // Cada pantalla del laboratorio. Para añadir un codelab: una entrada aquí
@@ -29,7 +30,8 @@ enum class PantallaLab(
     CATALOGO("3.02 · Catálogo de cursos", "LazyColumn, key y tarjetas desplegables"),
     TAREAS("3.03 · Lista de tareas", "Scaffold, TopAppBar, FAB, Snackbar y AlertDialog"),
     PROPINAS("3.04 · Calculadora de propinas", "TextField con validación, Slider y Switch"),
-    NAVEGACION("3.05 · Navegar entre pantallas", "Navigation 3: pila, claves y argumentos")
+    NAVEGACION("3.05 · Navegar entre pantallas", "Navigation 3: pila, claves y argumentos"),
+    QUIZ("3.06 · Quiz con ViewModel", "UiState, StateFlow y flujo unidireccional")
 }
 
 @Composable
@@ -61,6 +63,9 @@ fun LabApp(modifier: Modifier = Modifier) {
         }
         PantallaLab.NAVEGACION -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
             CursosApp()
+        }
+        PantallaLab.QUIZ -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            QuizScreen()
         }
     }
 }
