@@ -17,6 +17,7 @@ import com.pmdm.lab.ut3.codelabs.codelab04_propinas.PropinasScreen
 import com.pmdm.lab.ut3.codelabs.codelab05_navegacion.CursosApp
 import com.pmdm.lab.ut3.codelabs.codelab06_quiz.QuizScreen
 import com.pmdm.lab.ut3.codelabs.codelab07_heroe.HeroeScreen
+import com.pmdm.lab.ut3.codelabs.codelab08_pomodoro.PomodoroScreen
 import com.pmdm.lab.ut3.retos.reto01_ahorcado.ui.AhorcadoScreen
 import com.pmdm.lab.ut3.retos.reto02_wordle.WordleScreen
 import com.pmdm.lab.ut3.retos.reto03_memory.MemoryScreen
@@ -37,6 +38,7 @@ enum class PantallaLab(
     NAVEGACION("3.05 · Navegar entre pantallas", "Navigation 3: pila, claves y argumentos"),
     QUIZ("3.06 · Quiz con ViewModel", "UiState, StateFlow y flujo unidireccional"),
     HEROE("3.07 · Ficha de héroe", "Recursos, imágenes, idiomas y ColorFilter"),
+    POMODORO("3.08 · Temporizador Pomodoro", "Job, delay, bloqueo, ciclo de vida y animaciones"),
     AHORCADO("Reto 3.01 · El Ahorcado", "ViewModel, teclado virtual y diálogo de fin", esReto = true),
     WORDLE("Reto 3.02 · Wordle", "Tablero de intentos con pistas de colores", esReto = true),
     MEMORY("Reto 3.03 · Memory", "LazyVerticalGrid y corrutinas en el ViewModel", esReto = true)
@@ -77,6 +79,9 @@ fun LabApp(modifier: Modifier = Modifier) {
         }
         PantallaLab.HEROE -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
             HeroeScreen()
+        }
+        PantallaLab.POMODORO -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
+            PomodoroScreen()
         }
         PantallaLab.AHORCADO -> PantallaConVolver({ pantalla = PantallaLab.MENU }, modifier) {
             AhorcadoScreen()
